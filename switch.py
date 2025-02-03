@@ -302,7 +302,7 @@ mapping: dict[str, TuyaBLECategorySwitchMapping] = {
     ),
     "wsdcg": TuyaBLECategorySwitchMapping(
         products={
-            "ojzlzzsw": [  # Soil moisture sensor
+            "zqeaw7pi": [  # Soil moisture sensor
                 TuyaBLESwitchMapping(
                     dp_id=21,
                     description=SwitchEntityDescription(
@@ -322,6 +322,22 @@ mapping: dict[str, TuyaBLECategorySwitchMapping] = {
                     dp_id=1,
                     description=SwitchEntityDescription(
                         key="water_valve",
+                        entity_registry_enabled_default=True,
+                    ),
+                ),
+            ],
+            "hfgdqhho": [  # Irrigation computer
+                TuyaBLESwitchMapping(
+                    dp_id=105,
+                    description=SwitchEntityDescription(
+                        key="water_valve_z1",
+                        entity_registry_enabled_default=True,
+                    ),
+                ),
+                TuyaBLESwitchMapping(
+                    dp_id=104,
+                    description=SwitchEntityDescription(
+                        key="water_valve_z2",
                         entity_registry_enabled_default=True,
                     ),
                 ),

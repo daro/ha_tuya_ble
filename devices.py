@@ -279,7 +279,7 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
     ),
     "wsdcg": TuyaBLECategoryInfo(
         products={
-            "ojzlzzsw": TuyaBLEProductInfo(  # device product_id
+            "zqeaw7pi": TuyaBLEProductInfo(  # device product_id
                 name="Soil moisture sensor",
             ),
         },
@@ -294,9 +294,14 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
     ),
     "ggq": TuyaBLECategoryInfo(
         products={
-            "6pahkcau":  # device product_id
-            TuyaBLEProductInfo(
-                name="Irrigation computer",
+            **dict.fromkeys(
+                [
+                "6pahkcau", 
+                "hfgdqhho",
+                ],  # device product_id
+                TuyaBLEProductInfo( 
+                    name="Irrigation computer",
+                ),
             ),
         },
     ),

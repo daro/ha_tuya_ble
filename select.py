@@ -135,7 +135,7 @@ mapping: dict[str, TuyaBLECategorySelectMapping] = {
     ),
     "wsdcg": TuyaBLECategorySelectMapping(
         products={
-            "ojzlzzsw":  # Soil moisture sensor
+            "zqeaw7pi":  # Soil moisture sensor
             [
                 TuyaBLESelectMapping(
                     dp_id=9,
