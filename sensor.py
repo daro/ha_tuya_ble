@@ -200,10 +200,9 @@ mapping: dict[str, TuyaBLECategorySensorMapping] = {
     ),
     "wsdcg": TuyaBLECategorySensorMapping(
         products={
-            "zqeaw7pi": [  # Soil moisture sensor
+            "zqeaw7pi": [  # Temperature and humidity sensor
                 TuyaBLETemperatureMapping(
                     dp_id=1,
-                    coefficient=10.0,
                     description=SensorEntityDescription(
                         key="temp_current",
                         device_class=SensorDeviceClass.TEMPERATURE,
@@ -215,7 +214,7 @@ mapping: dict[str, TuyaBLECategorySensorMapping] = {
                     dp_id=2,
                     description=SensorEntityDescription(
                         key="humidity_value",
-                        device_class=SensorDeviceClass.MOISTURE,
+                        device_class=SensorDeviceClass.HUMIDITY,
                         native_unit_of_measurement=PERCENTAGE,
                         state_class=SensorStateClass.MEASUREMENT,
                     ),
@@ -239,7 +238,6 @@ mapping: dict[str, TuyaBLECategorySensorMapping] = {
                         "mdi:battery-check",
                     ],
                 ),
-                TuyaBLEBatteryMapping(dp_id=4),
             ],
         },
 #           "result": {

@@ -132,6 +132,8 @@
       },
       "humidity": {
         "name": "[%key:component::sensor::entity_component::humidity::name%]"
+      },"humidity_value": {
+        "name": "[%key:component::sensor::entity_component::humidity::name%]"
       },
       "moisture": {
         "name": "[%key:component::sensor::entity_component::moisture::name%]"
@@ -140,6 +142,8 @@
         "name": "[%key:component::sensor::entity_component::signal_strength::name%]"
       },
       "temperature": {
+        "name": "[%key:component::sensor::entity_component::temperature::name%]"
+      }, "temp_current": {
         "name": "[%key:component::sensor::entity_component::temperature::name%]"
       },
       "water_intake": {

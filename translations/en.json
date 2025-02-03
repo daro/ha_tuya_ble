@@ -127,7 +127,10 @@
                     "normal": "Normal"
                 }
             },
+
             "humidity": {
+                "name": "Humidity"
+            },"humidity_value": {
                 "name": "Humidity"
             },
             "low_battery": {
@@ -144,6 +147,9 @@
             },
             "temperature": {
                 "name": "Temperature"
+            },
+            "temp_current": {
+                "name": "Current Temperature"
             },
             "time_left": {
                 "name": "Remaining irrigation time"
