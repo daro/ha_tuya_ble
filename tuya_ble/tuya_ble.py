@@ -284,7 +284,10 @@ class TuyaBLEDevice:
         _LOGGER.debug("%s: Sending pairing request: %s",
             self.address, data.hex()
         )
+
         """
+
+        _LOGGER.debug("%s: Pair", self.address)
         await self._send_packet(
             TuyaBLECode.FUN_SENDER_PAIR, self._build_pairing_request()
         )
