@@ -280,7 +280,7 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
     "wsdcg": TuyaBLECategoryInfo(
         products={
             "zqeaw7pi": TuyaBLEProductInfo(  # device product_id
-                name="Soil moisture sensor",
+                name="Temperature and Humidity Sensor",
             ),
         },
     ),
